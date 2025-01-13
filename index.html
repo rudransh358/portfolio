@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rudransh Resume</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+        }
+        .nav {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            cursor: default;
+            text-decoration: none;
+        }
+        .nav img {
+            border-radius: 50%;
+            width: 7.5rem;
+            height: 7.5rem;
+            border: 6px solid #007acc;
+        }
+
+        .nav h1 {
+            margin: 5px 0;
+            font-size: 2rem;
+        }
+        .nav p {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        #projects ul {
+            display: flex;
+            flex-direction: column;
+        }
+        h2 {
+        border-bottom: 2px solid #007acc;
+        padding-bottom: 5px;
+        margin-bottom: 15px;
+      }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+        margin-bottom: 20px;
+        position: relative; 
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+        footer .row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 3rem;
+            font-size: x-large;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.3s ease, text-decoration 0.3s ease;
+        }
+        footer a i {
+            margin-right: 5px;
+        }
+        footer a:hover {
+            transform: scale(1.2);
+        }
+        footer a:nth-child(1):hover{
+            color: #118a9f;
+        }
+        footer a:nth-child(2):hover{
+            color: #050505;
+        }
+        .hover-card-container {
+        display: inline-block;
+        position: relative;
+    }
+
+    .hover-card-trigger {
+        display: inline-block;
+        cursor: pointer;
+        color: #007acc;
+        font-weight: bold;
+        transition: color 0.3s ease;
+    }
+
+    .hover-card-trigger:hover {
+        color: #005a99;
+    }
+
+    .hover-card {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 400px;
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+        z-index: 10;
+    }
+
+    .hover-card img {
+        width: 100%;
+        border-radius: 8px;
+    }
+
+    .hover-card-container:hover .hover-card {
+        opacity: 1;
+        visibility: visible;
+    }
+
+        @media (max-width: 480px) {
+            .nav {
+                flex-direction: column;
+                text-align: center;
+            }
+            .nav img {
+                margin-bottom: 10px;
+            }
+            footer {
+                flex-direction: column;
+            }
+            .hover-card {
+            left: 10%;
+            transform: translateX(0);
+        }
+        }
+    </style>
+</head>
+<body>
+
+<header> 
+    <div class="nav">
+        <img src="/rudransh.jpg" alt="Your Photo">
+        <div class="info">
+            <h1>Rudransh Singh</h1>
+            <p>Phone: +91 7205859040</p>
+            <p>Email: <a href="rudranshsingh385@gmail.com">rudranshsingh385@gmail.com</a></p>
+        </div>
+    </div>
+</header>
+
+<section id="skills">
+    <h2>Skills</h2>
+    <ul>
+        <li>Programming Languages: HTML, CSS, JavaScript, python, C++</li>
+        <li>Frameworks: React</li>
+        <li>Tools: Git, Docker, visual studios, wire shark </li>
+        <li>Soft Skills: Communication, Teamwork</li>
+    </ul>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <ul>
+      <li class="hover-card-container">
+          <strong class="hover-card-trigger">Microprocessor and Embedded System:</strong>
+          created an obstacle detection rover 
+          <div class="hover-card">
+            <img src="/Rover.jpg" alt="Rover">
+          </div>
+      </li>
+      <li class="hover-card-container">
+          <strong class="hover-card-trigger">EPD project:</strong>
+          Created a personal finance tracker using html and css
+          <div class="hover-card">
+              <img src="/Finance Tracker.jpg" alt="EPD project">
+          </div>
+      </li>
+      <li class="hover-card-container">
+          <strong class="hover-card-trigger">Microprocessor and Embedded System:</strong>
+          Developed an agricultural management system.
+          <div class="hover-card">
+              <img src="/Agriculture.png" alt="Agricultural Management System">
+          </div>
+      </li>
+  </ul>
+</section>
+
+<section id="work-experience">
+    <h2>Work Experience</h2>
+    <ul>
+        
+        <li><strong>Intern</strong> at XYZ Solutions (20xx - 20xx)
+            <ul>
+                <li>Assisted in developing and testing internal tools for data analysis.</li>
+                <li>Improved performance of existing applications by optimizing code.</li>
+            </ul>
+        </li>
+    </ul>
+</section>
+
+<section id="education">
+    <h2>Education</h2>
+    <ul>
+        <li><strong>Bachelor of Technology in Electronics and Computer Science</strong> - KiiT University (2022 - 2026)</li>
+        <li><strong>Secondary school</strong> - Delhi public School (2020 - 2022)</li>
+        <li><strong>Primary School</strong> - Stewart School (2007 - 2020)</li>
+    </ul>
+</section>
+
+<footer>
+    <div class="row">
+        <a href="https://www.linkedin.com/in/rudransh-singh-807435254/?trk=opento_sprofile_goalscard" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <a href="https://github.com/rudransh358" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+    </div>
+</footer>
+
+</body>
+</html>
